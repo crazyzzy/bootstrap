@@ -88,6 +88,7 @@
 
 	<div class="container">
 		<h2>Image Gallery</h2>
+		<p>Use class <code>.thumbnail</code>.</p>
 		<div class="row">
 			<div class="col-md-4">
 				<div class="thumbnail">
@@ -133,6 +134,66 @@
 		<button class="btn btn-primary btn-block" style="width: 100%">
 			Block level button
 		</button>
+		<button class="btn btn-primary btn-block disabled">
+			Block level button
+		</button>
+	</div>
+
+	<div class="container">
+		<h2>Button Group</h2>
+		<p>Need a <code>&lt;div&gt;</code> element to wrap the group.</p>
+		<div class="btn-group">
+			<button class="btn btn-primary">Member 1</button>
+			<button class="btn btn-primary">Member 2</button>
+			<button class="btn btn-primary">Member 3</button>
+		</div>
+		<br><br>
+		<div class="btn-group">
+			<button class="btn btn-primary">Member 1</button>
+			<button class="btn btn-primary">Member 2</button>
+			<button class="btn btn-primary">Member 3</button>
+		</div>
+		<br><br>
+		<div class="btn-group-vertical">
+			<button class="btn btn-primary">Member 1</button>
+			<button class="btn btn-primary">Member 2</button>
+			<button class="btn btn-primary">Member 3</button>
+		</div>
+		<br><br>
+		<p>Use class <code>.btn-group.justified</code> and element <code>&lt;a&gt;</code> to span the line.</p>
+		<div class="btn-group btn-group-justified">
+			<a href="#" class="btn btn-primary">Member 1</a>
+			<a href="#" class="btn btn-primary">Member 2</a>
+			<a href="#" class="btn btn-primary">Member 3</a>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>Nesting Button Groups</h2>
+		<div class="btn-group">
+			<button class="btn btn-info">Element1</button>
+			<button class="btn btn-info">Element2</button>
+			<div class="btn-group">
+				<button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+					List1 <span class="caret"></span> 
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#">Something</a></li>
+					<li><a href="#">Another</a></li>
+				</ul>
+			</div>
+		</div>
+		<br><br>
+		<div class="btn-group">
+			<button class="btn btn-info">List1</button>
+			<button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+				<span class="caret"></span> 
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Something</a></li>
+				<li><a href="#">Another</a></li>
+			</ul>
+		</div>
 	</div>
 </body>
 </html>
