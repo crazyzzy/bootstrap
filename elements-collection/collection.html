@@ -9,7 +9,15 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Bootstrap elements collection</h1>
+		<div class="jumbotron" style="background-color: lavender">
+			<h1>Bootstrap Elements Collection</h1>
+			<hr>
+			<p class="text-info"><small>Bootstrap is is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</small></p>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>Basic Grid</h2>
 		<div class="row">
 			<div class="col-xs-2 col-sm-4 col-md-6" style="background-color: lavender">
 				<p>.col-sm-4</p>
@@ -26,7 +34,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+
+	<div class="container table-responsive">
 		<h2>Basic Table</h2>
 		<table class="table">
 			<thead>
@@ -49,10 +58,10 @@
 				</tr>
 			</tbody>
 		</table>
-		<table class="table table-striped table-bordered">
+		<table class="table table-striped table-bordered table-hover">
 			<thead>
 				<tr>
-					<th>Firstname</th>
+					<th class="info">Firstname</th>
 					<th>Lastname</th>
 					<th>Email</th>
 				</tr>
@@ -60,7 +69,7 @@
 			<tbody>
 				<tr>
 					<td>zzy</td>
-					<td>zzy</td>
+					<td class="info">zzy</td>
 					<td>zzy@example.com</td>
 				</tr>
 				<tr>
@@ -70,6 +79,60 @@
 				</tr>
 			</tbody>
 		</table>
+	</div>
+
+	<div class="container">
+		<h2>Picture</h2>
+		<img src="sanfran.jpg" alt="sanfran" width="200">
+	</div>
+
+	<div class="container">
+		<h2>Image Gallery</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="#">
+						<img src="gallery1.png" style="width: 100%">
+						<div class="caption">
+							<p>First pic of galllery.</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="#">
+						<img src="gallery2.png" alt="Second Image" style="width: 100%">
+						<div class="caption">
+							<p>Second pic of galllery.</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="#">
+						<img src="gallery3.png" style="width: 100%">
+						<div class="caption">
+							<p>Third pic of galllery.</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>Buttons</h2>
+		<button class="btn btn-lg">Basic</button>
+		<button class="btn btn-default btn-md">Default</button>
+		<button class="btn btn-primary btn-sm">Primary</button>
+		<button class="btn btn-danger btn-xs">Danger</button>
+		<button class="btn btn-warning">Warning</button>
+		<button class="btn btn-link">Link</button>
+		<button class="btn btn-primary btn-block" style="width: 100%">
+			Block level button
+		</button>
 	</div>
 </body>
 </html>
