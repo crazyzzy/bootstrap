@@ -82,13 +82,13 @@
 	</div>
 
 	<div class="container">
-		<h2>Picture</h2>
+		<h2>Image</h2>
 		<img src="sanfran.jpg" alt="sanfran" width="200">
 	</div>
 
 	<div class="container">
 		<h2>Image Gallery</h2>
-		<p>Use class <code>.thumbnail</code>.</p>
+		<p>Use class <code>.thumbnail</code> to warp <code>&lt;img&gt;</code> element.</p>
 		<div class="row">
 			<div class="col-md-4">
 				<div class="thumbnail">
@@ -141,7 +141,7 @@
 
 	<div class="container">
 		<h2>Button Group</h2>
-		<p>Need a <code>&lt;div&gt;</code> element to wrap the group.</p>
+		<p>Use a <code>&lt;div&gt;</code> element with <code>.btn-group</code> class to wrap the group.</p>
 		<div class="btn-group">
 			<button class="btn btn-primary">Member 1</button>
 			<button class="btn btn-primary">Member 2</button>
@@ -193,6 +193,34 @@
 				<li><a href="#">Something</a></li>
 				<li><a href="#">Another</a></li>
 			</ul>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>Badges</h2>
+		<p><code>&lt;span&gt;</code> element with <code>.badge</code> class.</p>
+		<a href="#">News <span class="badge">15</span></a><br>
+		<button class="btn btn-primary">Comments <span class="badge">10</span></button>
+	</div>
+
+	<div class="container">
+		<h2>Progress Bar</h2>
+		<p>Use a <code>&lt;div&gt;</code> element with <code>.progress</code> class</p>
+		<div class="progress">
+			<div class="progress-bar" role="progressbar" aria-valuenow="60"
+				aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+				60% Complete
+			</div>
+		</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+				40% Complete
+			</div>
+		</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+				40% Complete
+			</div>
 		</div>
 	</div>
 </body>
