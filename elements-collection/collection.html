@@ -16,6 +16,79 @@
 		</div>
 	</div>
 
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Website Name</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Page 1</a></li>
+				<li><a href="#">Page 2</a></li>
+				<li><a href="#">Page 3</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</ul>
+			<button class="btn btn-danger navbar-btn navbar-left">Nav Button</button>
+			<form class="navbar-form navbar-left">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="">
+				</div>
+				<button class="btn btn-default">Submit</button>
+			</form>
+			<form class="navbar-form">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search">
+					<div class="input-group-btn">
+						<button class="btn btn-default">
+							<a href="#"><span class="glyphicon glyphicon-search"></span></a>
+							<i class="glyphicon glyphicon-search"></i>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</nav>
+
+	<div class="container">
+		<h2>Basic Navbar</h2>
+		<p>First created by <code>&lt;nav class="navbar navbar-default"&gt;</code>, then add <code>&lt;div class="container-fluid"&gt;</code>.</p>
+	</div>
+
+		<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">WebsiteName</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Page 1 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Page 1-1</a></li>
+							<li><a href="#">Page 1-2</a></li>
+							<li><a href="#">Page 1-3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
 	<div class="container">
 		<h2>Basic Grid</h2>
 		<div class="row">
@@ -314,5 +387,63 @@
 		</div>	
 	</div>
 	
+	<div class="container">
+		<h2>Collapsible</h2>
+		<p>Use <code>data-target</code> attribute.</p>
+		<button class="btn btn-info" data-toggle="collapse"
+		data-target="#demo">Simple collapsible</button>
+		<div id="demo" class="collapse">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   			 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>Tabs</h2>
+		<p>A <code>&lt;ul&gt;</code> element with <code>.nav nav-tabs</code> class.</p>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">Menu 1</a></li>
+			<li><a href="#">Menu 2</a></li>
+			<li><a href="#">Menu 3</a></li>
+		</ul><br>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#">Home</a></li>
+			<li class="dropdown" >
+				<a href="#" class="dropdown-toggle"
+				data-toggle="dropdown">Menu 1 <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Submenu 1</a></li>
+					<li><a href="#">Submenu 2</a></li>
+					<li><a href="#">Submenu 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Menu 2</a></li>
+			<li><a href="#">Menu 3</a></li>
+		</ul><br>
+		<ul class="nav nav-tabs nav-justified">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">Menu 1</a></li>
+			<li><a href="#">Menu 2</a></li>
+			<li><a href="#">Menu 3</a></li>
+		</ul><br>
+	</div>
+
+	<div class="container">
+		<h2>Pills</h2>
+		<p>A <code>&lt;ul&gt;</code> element with <code>.nav nav-pills</code> class.</p>
+		<ul class="nav nav-pills">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">Menu 1</a></li>
+			<li><a href="#">Menu 2</a></li>
+			<li><a href="#">Menu 3</a></li>
+		</ul><br>
+	</div>
+
+
+		
+	<br>
+	<br>
 </body>
 </html>
