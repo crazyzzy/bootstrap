@@ -137,3 +137,9 @@
 	border-color: transparent;
 	color: #fff !important;
 }
+
+footer .glyphicon {
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #c94c4c;
+}
