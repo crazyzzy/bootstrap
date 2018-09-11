@@ -6,17 +6,24 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  	.affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+  </style>
 </head>
 <body>
 	<div class="container">
-		<div class="jumbotron" style="background-color: lavender">
+		<div class="jumbotron" style="background-color: lavender;">
 			<h1>Bootstrap Elements Collection</h1>
 			<hr>
 			<p class="text-info"><small>Bootstrap is is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</small></p>
 		</div>
 	</div>
 
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#">Website Name</a>
@@ -57,7 +64,7 @@
 		<p>First created by <code>&lt;nav class="navbar navbar-default"&gt;</code>, then add <code>&lt;div class="container-fluid"&gt;</code>.</p>
 	</div>
 
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="500">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -104,6 +111,18 @@
 			</div>
 			<div class="col-xs-6 col-sm-4 col-md-2" style="background-color: lavender">
 				.col-sm-4
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>Basic Grid - Stacked-to-horizontal</h2>
+		<div class="row">
+			<div class="col-sm-6" style="background-color: pink">
+				.col-sm-6
+			</div>
+			<div class="col-sm-6" style="background-color: pink">
+				.col-sm-6
 			</div>
 		</div>
 	</div>
@@ -454,12 +473,21 @@
 			<div class="carousel-inner">
 				<div class="item active">
 					<img src="la.jpg" alt="LA">
+					<div class="carousel-caption">
+						<h3>Los Angeles</h3>
+					</div>
 				</div>
 				<div class="item">
 					<img src="chicago.jpg" alt="Chicago">
+					<div class="carousel-caption">
+						<h3>Chicago</h3>
+					</div>
 				</div>
 				<div class="item">
 					<img src="ny.jpg" alt="New York">
+					<div class="carousel-caption">
+						<h3>New York</h3>
+					</div>
 				</div>
 			</div>
 			<!-- Left and right controls -->
